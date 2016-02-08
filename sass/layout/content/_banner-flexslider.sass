@@ -1,0 +1,79 @@
+.banner-flexslider
+	background: #1b1d20
+	height: 100%
+	width: 100%
+	.flexslider
+		li 
+			height: 100%
+	.flex-direction-nav .flex-prev
+		position: absolute
+		bottom: 0px
+		left: 0px
+		font-size: 0
+		line-height: 0
+		background: #26292e
+		&:before
+			font-size: 14px
+			line-height: 50px
+			color: #fff 
+			padding: 18px 18px
+			+font-icon("arrow-left")
+		&:hover
+			background: #de5e60
+	.flex-direction-nav .flex-next
+		position: absolute
+		bottom: 0px
+		left: 51px
+		font-size: 0
+		line-height: 0
+		background: #26292e
+		&:before
+			font-size: 14px
+			line-height: 50px
+			color: #fff 
+			padding: 18px 18px
+			+font-icon("arrow-right")
+		&:hover
+			background: #de5e60
+	.flex-control-paging li a
+		background: #6b6d71
+		&:hover
+			background: #fff
+		&:focus
+			background: #de5e60
+	li
+		text-align: center
+	.flex-control-nav
+		+breakpoint($break-479)
+			display: none
+	.banner-text
+		background: #1b1d20
+		display: inline-block 
+		width: 100%
+		height: 100%
+		margin: auto
+		&:before 
+			content: ""
+			height: 100%
+			display: inline-block
+			vertical-align: middle
+		h2
+			position: relative
+			text-transform: uppercase
+			display: inline-block
+			font-size: 72px
+			line-height: 220px
+			color: #fefefe
+			+breakpoint($break-767)
+				font-size: 50px
+			+breakpoint($break-479)
+				font-size: 24px
+			&:before 
+				content: ""
+				height: 100%
+				display: inline-block
+				vertical-align: middle
+				
+	.flexslider
+		height: 93%
+		background: #2f3238

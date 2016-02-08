@@ -1,0 +1,80 @@
+@import content/banner-flexslider
+@import content/our-work
+@import content/about-us
+@import content/get-in-touch
+
+// .searching
+.searching
+	font-family: $c-a
+	background: #26292e
+	text-align: center
+	padding: 50px 0px
+	p
+		padding: 60px 0px
+		font-size: 20px
+		line-height: 22px
+		color: #7f8289
+		+breakpoint($break-479)
+			font-size: 16px
+	a 
+		color: #de5e60
+		+transition(0.5s)
+		&:hover
+			color: #000
+	.searching-color-white
+		color: #fff
+	.searching-text-italic
+		font-style: italic
+	.searching-twitter
+		color: #de5e60
+		+transition(0.5s)
+		&:hover
+			color: #000
+		&:before
+			+font-icon("twitter")	
+
+// socials
+.socials
+	font-family: $v-a
+	background: #2f3238
+	display: block
+	text-align: center
+	padding: 100px 0px
+	.socials-items
+		margin-left: -20px
+		display: inline-block
+		a
+			font-family: $c-a
+			padding: 35px 22px
+			color: #686a6d
+			background: #26292e
+			margin: 10px 10px 10px 10px
+			font-size: 30px
+			line-height: 0
+			display: inline-block
+			+transition(0.5s)
+			&:hover
+				background: #de5e60
+				color: #fff
+		.twitter
+			&:before
+				+font-icon("twitter")
+		.facebook
+			&:before
+				+font-icon("facebook")
+		.vimeo
+			&:before
+				+font-icon("vimeo")
+		.behance
+			&:before
+				+font-icon("behance")
+		.dribble
+			&:before
+				+font-icon("dribble")
+
+
+
+
+
+
+
